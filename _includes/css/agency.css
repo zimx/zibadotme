@@ -54,7 +54,6 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
-    
     font-weight: 600;
 }
 
@@ -189,23 +188,16 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.data.template.color.secondary }};
 }
 
-.navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
-}
 
-.navbar-default .navbar-toggle {
-    border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.primary }};
-}
+
+
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color.primary }};
-}
+
 
 .navbar-default .nav li a {
     text-transform: uppercase;
@@ -218,27 +210,11 @@ fieldset[disabled] .btn-xl.active {
     transition: all ease .35s;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
-    outline: 0;
-    color: #{{ site.data.template.color.primary }};
-}
 
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
-}
-
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #{{ site.data.template.color.secondary }};
-}
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 2px 0;
         border: 0;
         background-color: transparent;
         -webkit-transition: padding .3s;
@@ -253,13 +229,11 @@ fieldset[disabled] .btn-xl.active {
         transition: all .3s;
     }
 
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
-    }
+ 
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
+        padding: 1px 0;
+        background-color: rgb(117, 84, 150);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -280,27 +254,11 @@ header {
     -o-background-size: cover;
 }
 
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
 
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
-}
 
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
-}
+
+
+
 
 @media(min-width:768px) {
     header .intro-text {
@@ -377,7 +335,7 @@ section h3.section-subheading {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
+    //background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
