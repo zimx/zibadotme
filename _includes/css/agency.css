@@ -19,12 +19,12 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a,
@@ -54,7 +54,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .img-centered {
@@ -73,7 +73,7 @@ h6 {
     border-color: #{{ site.data.template.color.primary }};
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
 }
@@ -124,8 +124,8 @@ fieldset[disabled] .btn-primary.active {
     border-radius: 3px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
 }
@@ -270,7 +270,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/header-bg.jpg') ;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -612,6 +612,7 @@ section h3.section-subheading {
 @media(min-width:1200px) {
     .timeline>li {
         min-height: 170px;
+        
     }
 
     .timeline>li .timeline-panel {
